@@ -1,0 +1,42 @@
+/* Reset mínimo */
+* {
+    box-sizing: border-box;
+}
+
+/* Header image (logo pequeño) */
+.header-img {
+    width: 64px;
+    height: 64px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 2px solid rgba(255, 255, 255, 0.15);
+}
+
+/* Canvas container */
+#gameCanvas {
+    display: block;
+    width: 100%;
+    height: auto;
+    background-color: #000;
+    background-image: url('assets/fondo.jpg');
+    background-size: cover;
+    background-position: center;
+    cursor: url('assets/cursor.png') 16 16, auto;
+    /* puntero personalizado */
+}
+
+/* Mensajes (pausa / inicio) */
+#message {
+    padding: 12px 20px;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    font-size: 20px;
+    text-align: center;
+}
+
+/* Pequeña responsividad */
+@media (max-width: 767px) {
+    #gameCanvas {
+        height: 360px;
+    }
+}
